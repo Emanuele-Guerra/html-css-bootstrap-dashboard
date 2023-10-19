@@ -1,0 +1,10 @@
+nav{
+    height: 50px;
+}
+.box-lateral{
+    height: 100%;
+    width: 8%;
+    background-color: cornflowerblue;
+    padding: 1em;
+    border: 1px solid black;
+}
