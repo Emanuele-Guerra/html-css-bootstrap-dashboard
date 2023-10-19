@@ -9,76 +9,245 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">qwwww</span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+   <header>
+    <nav>
+        
+    </nav>
 
-    </header>
-    <main>
-        <section class="container-fluid">
-            <div class="row">
-                    <div class="box-lateral d-flex flex-column justify-content-between">
-                        <div class="col">
+   </header>
+   
+   <main>
+        <section class="left-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="box-left d-flex flex-column justify-content-between">
                             <div>
+                                <div><i class="fa-solid fa-house"></i>
+                                    <span>Home</span>
+                                </div>
                                 <div>
-                                    <i class="fa-solid fa-house"></i>
-                                    <span>HOME</span>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <span>Signals</span>
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-chart-simple"></i>
-                                    <span>STATS</span>
+                                    <span>Stats</span>
                                 </div>
-                                <div>
-                                    <i class="fa-sharp fa-solid fa-signal-bars"></i>
-                                    <span>SIGNALS</span>
-                                </div>
+
                             </div>
                             <div>
                                 <div>
                                     <i class="fa-solid fa-gear"></i>
                                     <span>Admin</span>
                                 </div>
+
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <section class="right-container">
+            <div class="container-fluid">
+                
+                
+                <div class="row">
+                <div class="box-upper d-flex">
+                    <div class="col-12 col-lg-7">
+                        <div class="box d-flex flex-column">
+                            <div>
+                                <h3 class="d-inline">Boolean</h3>
+                                <button class="btn btn-primary">Piano Blaze</button>
+                            </div>
+                               
+                            
+                            <div class="">
+                                <button class="btn btn-primary">3 app</button>
+                                <i class="fa-solid fa-angles-right"></i>
+                                <button class="btn btn-primary">Boolean mobile app</button>
+                                <button class="btn btn-primary">Boolean web app</button>
+                                <button class="btn btn-primary">Boolean blog app</button>
+                                
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="box">
+                            <h6>Studenti online negli ultimi 30 minuti</h6>
+                            <p class="display-5">125</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <div class="box">
+                            <span>Nuovo studente</span>
+                            <button class="btn btn-light"><i class="fa-solid fa-plus"></i></button>
                             
                         </div>
                     </div>
+                </div>
             </div>
-        </section>    
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="box">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <h4>Prossime classi</h4>
+                                    </div>
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Data inizio</th>
+                                            <th scope="col">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>15 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>16 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>17 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-warning text-nowrap">Processing</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>18 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>19 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-warning">Failed</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>20 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>21 febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-warning">Failed</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
+                                            <td>22 Febbraio 2021</td>
+                                            <td>20%</td>
+                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="box">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <h5>To do</h5>
+                                    </div>
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item"><input type="checkbox">Kickoff nuove classi</li>
+                                          <li class="list-group-item"><input type="checkbox">Lezione su Bootstrap 5 in Classe #75</li>
+                                          <li class="list-group-item"><input type="checkbox">Controllare username Github studenti</li>
+                                        </ul>
+                                      </div>
+                                    
+                                  </div>
+                                
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="box">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <h4>F.A.Q.</h4>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">An item</li>
+                                      <li class="list-group-item">A second item</li>
+                                      <li class="list-group-item">A third item</li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg4">
+                            <div class="box">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card">
+                                            <img src="/img/stats.jpeg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Utenti attivi</h5>
+                                              <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item">An item</li>
+                                              <li class="list-group-item">A second item</li>
+                                              <li class="list-group-item">A third item</li>
+                                            </ul>
+                                            <div class="card-body">
+                                              <a href="#" class="card-link">Card link</a>
+                                              <a href="#" class="card-link">Another link</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                        
+
+                    </div>
             
-    </main>
-    
+            
+            
+            
+            
+            
+            
+            </div>
+            </div>
+        </section>
+
+   </main>
     
 </body>
 </html>
