@@ -10,9 +10,50 @@
 </head>
 <body>
    <header>
-    <nav>
-        
-    </nav>
+    <nav class="navbar navbar-expand bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="d-none d-lg-inline-block" src="img/logo.svg" alt=""><img class="d-lg-none logo-mobile" src="img/mobile-logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <form class="d-flex w-100" role="search">
+                
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></span>
+                    <input type="text" class="form-control" placeholder="Prova a cercare Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                    
+                
+              
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active d-none d-md-inline-block" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-none d-md-inline-block" href="#"><i class="fa-solid fa-circle-question"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active d-none d-md-inline-block" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bell" style="color: #ffd500;"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
 
    </header>
    
@@ -20,26 +61,26 @@
         <section class="left-container">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="box-left d-flex flex-column justify-content-between">
+                    <div class="col-12 px-0">
+                        <div class="box-left d-flex flex-column justify-content-between text-center text-lg-start p-2 p-lg-3">
                             <div>
-                                <div><i class="fa-solid fa-house"></i>
-                                    <span>Home</span>
+                                <div><i class="fa-solid fa-house text-center text-lg-start p-0"></i>
+                                    <span class="d-none d-lg-inline-block">Home</span>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-signal"></i>
-                                    <span>Signals</span>
+                                    <i class="fa-solid fa-signal text-center text-lg-start p-0"></i>
+                                    <span class="d-none d-lg-inline-block">Signals</span>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-chart-simple"></i>
-                                    <span>Stats</span>
+                                    <i class="fa-solid fa-chart-simple text-center text-lg-start p-0"></i>
+                                    <span class="d-none d-lg-inline-block">Stats</span>
                                 </div>
 
                             </div>
                             <div>
                                 <div>
-                                    <i class="fa-solid fa-gear"></i>
-                                    <span>Admin</span>
+                                    <i class="fa-solid fa-gear text-center text-lg-start p-0"></i>
+                                    <span class="d-none d-lg-inline-block">Admin</span>
                                 </div>
 
                             </div>
@@ -55,116 +96,117 @@
                 
                 
                 <div class="row">
-                <div class="box-upper d-flex">
-                    <div class="col-12 col-lg-7">
-                        <div class="box d-flex flex-column">
-                            <div>
-                                <h3 class="d-inline">Boolean</h3>
-                                <button class="btn btn-primary">Piano Blaze</button>
-                            </div>
+                    <div class="box-upper d-flex">
+                        <div class="col-12 col-lg-7">
+                            <div class="box d-flex flex-column">
+                                <div class="btn-app">
+                                    <h3 class="d-inline">Boolean</h3>
+                                    <button class="btn btn-primary">Piano Blaze</button>
+                                </div>
                                
                             
-                            <div class="">
-                                <button class="btn btn-primary">3 app</button>
-                                <i class="fa-solid fa-angles-right"></i>
-                                <button class="btn btn-primary">Boolean mobile app</button>
-                                <button class="btn btn-primary">Boolean web app</button>
-                                <button class="btn btn-primary">Boolean blog app</button>
+                                <div class="btn-app">
+                                    <button class="btn btn-primary">3 app</button>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    <button class="btn btn-primary d-lg-none">+</button>
+                                    <button class="btn btn-primary d-none d-lg-inline-block">Boolean mobile app</button>
+                                    <button class="btn btn-primary d-none d-lg-inline-block">Boolean web app</button>
+                                    <button class="btn btn-primary d-none d-lg-inline-block">Boolean blog app</button>
                                 
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="box">
+                                <h6>Studenti online negli ultimi 30 minuti</h6>
+                                <p class="display-5">125</p>
                             </div>
                         </div>
-
-
-
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="box">
-                            <h6>Studenti online negli ultimi 30 minuti</h6>
-                            <p class="display-5">125</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-2">
-                        <div class="box">
-                            <span>Nuovo studente</span>
-                            <button class="btn btn-light"><i class="fa-solid fa-plus"></i></button>
+                        <div class="col-12 col-lg-2">
+                            <div class="box">
+                                <span>Nuovo studente</span>
+                                <button class="btn btn-outline-light text-white"><i class="fa-solid fa-plus"></i></button>
                             
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
                 <div class="container-fluid px-0">
                     <div class="row">
                         <div class="col-12 col-lg-8">
-                            <div class="box">
+                            <div class="box mt-lg-3">
                                 <div class="card">
                                     <div class="card-header">
                                       <h4>Prossime classi</h4>
                                     </div>
-                                    <table class="table">
+                                    <table class="table table-hover">
                                         <thead>
                                           <tr>
                                             <th scope="col">Nome</th>
-                                            <th scope="col">Data inizio</th>
-                                            <th scope="col">ROI</th>
+                                            <th scope="col" class="d-none d-lg-inline-block">Data inizio</th>
+                                            <th scope="col" class="d-none d-lg-inline-block">ROI</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>15 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">15 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-success text-white">Done</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>16 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">16 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-success text-white">Done</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>17 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-warning text-nowrap">Processing</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">17 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-warning text-nowrap text-white">Processing</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>18 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">18 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-success text-white">Done</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>19 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-warning">Failed</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">19 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-warning text-white">Failed</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>20 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">20 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-success text-white">Done</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>21 febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-warning">Failed</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">21 febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-warning text-white">Failed</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                           <tr>
-                                            <th scope="row"><i class="fa-solid fa-code"></i>Classe 75</th>
-                                            <td>22 Febbraio 2021</td>
-                                            <td>20%</td>
-                                            <td><button type="button" class="btn btn-success">Done</button></td>
+                                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                                            <td class="d-none d-lg-inline-block">22 Febbraio 2021</td>
+                                            <td class="d-none d-lg-inline-block">20%</td>
+                                            <td><button type="button" class="btn btn-success text-white">Done</button></td>
                                             <td><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
                                           </tr>
                                         </tbody>
@@ -172,28 +214,7 @@
                                     
                                   </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="box">
-                                <div class="card">
-                                    <div class="card-header">
-                                      <h5>To do</h5>
-                                    </div>
-                                    <div class="card">
-                                        <ul class="list-group list-group-flush">
-                                          <li class="list-group-item"><input type="checkbox">Kickoff nuove classi</li>
-                                          <li class="list-group-item"><input type="checkbox">Lezione su Bootstrap 5 in Classe #75</li>
-                                          <li class="list-group-item"><input type="checkbox">Controllare username Github studenti</li>
-                                        </ul>
-                                      </div>
-                                    
-                                  </div>
-                                
-
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-8">
-                            <div class="box">
+                            <div class="box mt-lg-3">
                                 <div class="card">
                                     <div class="card-header">
                                       <h4>F.A.Q.</h4>
@@ -207,7 +228,21 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <div class="box">
+                            <div class="box mt-lg-3">
+                                <div class="card">
+                                    <div class="card-header">
+                                      <h5>To do</h5>
+                                    </div>
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item"><input type="checkbox">Kickoff nuove classi</li>
+                                          <li class="list-group-item"><input type="checkbox">Lezione su Bootstrap 5 in Classe #75</li>
+                                          <li class="list-group-item"><input type="checkbox">Controllare username Github studenti</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box mt-lg-3">
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="card">
@@ -229,13 +264,20 @@
                                     </div>
                                   </div>
                             </div>
-                        </div>
-                    </div>
-
-                    
+                          </div>
+                          
                         
-
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                     </div>
+                </div>
             
             
             
